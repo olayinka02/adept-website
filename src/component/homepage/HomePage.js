@@ -5,6 +5,11 @@ import CounterSection from './component/CounterSection';
 import AboutAdept from './component/AboutAdept';
 import HowitWorks from './component/HowitWorks';
 import Features from './component/Features';
+import Benefits from './component/Benefits';
+import Question from './component/Question';
+import Contactus from './component/Contactus';
+import Partner from './component/Partner';
+
 
 function HomePage() {
   return (
@@ -15,6 +20,10 @@ function HomePage() {
       <AboutAdept />
       <HowitWorks />
       <Features />
+      <Benefits />
+      <Question />
+      <Contactus />
+      <Partner />
     </>
   )
 }
