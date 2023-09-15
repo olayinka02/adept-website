@@ -52,7 +52,7 @@ function  EducationSec() {
             viewport={{ once: true }}
           >
            
-              <Image  src={educationimage} width={100+'%'} />
+              <Image  src={educationimage} className="all-image" width={100+'%'} />
           
           </motion.div>
         </Col>

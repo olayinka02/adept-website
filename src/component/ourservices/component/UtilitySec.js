@@ -59,7 +59,7 @@ function  UtilitySec() {
             viewport={{ once: true }}
           >
            
-              <Image  src={utilityimage} width={100+'%'} />
+              <Image  src={utilityimage} className="all-image" width={100+'%'} />
           
           </motion.div>
         </Col>

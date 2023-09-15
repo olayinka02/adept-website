@@ -376,6 +376,9 @@
 .contactus{
   margin-top:1rem !important;
 }
+.all-image{
+  margin-top:2.5rem;
+}
 
 
 
@@ -545,6 +548,9 @@
 }
 .contactus{
   margin-top:0rem !important;
+}
+.all-image{
+  margin-top:0rem;
 }
 
 

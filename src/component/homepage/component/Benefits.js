@@ -32,7 +32,7 @@ function Benefits() {
           </Col>
 
           <Col xs={12} sm={12} md={6} lg={6}>
-            <Image src={benefitimage} width={100 + "%"} />
+            <Image src={benefitimage} className="all-image" width={100 + "%"} />
           </Col>
         </Row>
       </motion.div>

@@ -54,7 +54,7 @@ function  CommerceSec() {
             viewport={{ once: true }}
           >
            
-              <Image  src={commerceimage} width={100+'%'} />
+              <Image  src={commerceimage} className="all-image commerce-image" />
           
           </motion.div>
         </Col>

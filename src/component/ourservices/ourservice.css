@@ -33,6 +33,9 @@
     color: #515151;
     width:95%;
   }
+  .commerce-image{
+    width: 100% !important;
+  }
 
 
 
@@ -55,6 +58,9 @@
         padding-right:7%;
       
     }
+    .commerce-image{
+        width: 85% !important;
+      }
  }
 
 

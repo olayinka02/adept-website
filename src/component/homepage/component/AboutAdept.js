@@ -121,7 +121,7 @@ function AboutAdept() {
               >
                 <Image src={payment} width={210} className="paymentimage" />
               </motion.div>
-              <Image className="flowimage" src={flowimage} width={320} />
+              <Image className=" all-image flowimage" src={flowimage} width={320} />
             </div>
           </motion.div>
         </Col>

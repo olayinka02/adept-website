@@ -46,7 +46,7 @@ function  Features() {
             viewport={{ once: true }}
           >
            
-              <Image  src={featureimage} width={100+'%'} />
+              <Image  src={featureimage} className="all-image" width={100+'%'} />
           
           </motion.div>
         </Col>

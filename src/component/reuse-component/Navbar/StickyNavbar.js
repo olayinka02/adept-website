@@ -6,8 +6,18 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../../assets/logo.svg";
 import "../Navbar/navbar.css";
+import LoginModal from "../Login/LoginModal";
+
 
 function StickyNavbar() {
+
+  const [loginShow, setLoginShow] = useState(false);
+   
+  
+    const handleLoginClose = () => setLoginShow(false);
+    const handleLoginShow = () => setLoginShow(true);
+
+
   const [expanded, setExpanded] = useState(false);
   const Harmburgerstyle = {
     color: "#F14810",
@@ -54,6 +64,7 @@ function StickyNavbar() {
             <div className="buttonbody">
               <Button
                 variant="outline-primary"
+                onClick={handleLoginShow}
                 style={{
                   borderColor: "#F14810",
                   color: "#F14810",
@@ -72,6 +83,10 @@ function StickyNavbar() {
                   LOGIN
                 </span>
               </Button>{" "}
+
+
+              <LoginModal show={loginShow} handleClose={handleLoginClose} />
+
               <Button
                 variant="primary"
                 style={{
