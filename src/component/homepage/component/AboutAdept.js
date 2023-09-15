@@ -1,12 +1,20 @@
-import React from "react";
+import React, {useState} from "react";
 import { Image, Row, Col, Container, Button } from "react-bootstrap";
 import { easeOut, motion } from "framer-motion";
 import flowimage from "../../../assets/flowimage.png";
 import payment from "../../../assets/payment.png";
 import organisation from "../../../assets/organisation.png";
 import institution from "../../../assets/institution.png";
+import CreateaccModal from "../../reuse-component/Create-account/CreateaccModal";
 
 function AboutAdept() {
+
+  const [createaccShow, setCreateaccShow] = useState(false);
+
+  const handleCreateaccClose = () => setCreateaccShow(false);
+  const handleCreateaccShow = () => setCreateaccShow(true);
+
+
   return (
     <Container fluid className="aboutadept">
       <Row>
@@ -48,6 +56,7 @@ function AboutAdept() {
           </p>
           <Button
             variant="primary"
+            onClick={handleCreateaccShow}
             style={{
               backgroundColor: "#F14810",
               borderColor: "#F14810",
@@ -66,6 +75,8 @@ function AboutAdept() {
               CREATE AN ACCOUNT
             </span>
           </Button>
+
+        <CreateaccModal show={createaccShow} handleClose={handleCreateaccClose}  />
           </motion.div>
         </Col>
       

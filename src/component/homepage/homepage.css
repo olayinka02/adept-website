@@ -379,7 +379,20 @@
 .all-image{
   margin-top:2.5rem;
 }
-
+a{
+  color:#263238 !important;
+}
+a:active{
+  color: #f14810 !important;
+}
+.arrow{
+  margin-left:4.2rem;
+}
+.btn-close{
+  background:#515151 !important;
+  color: #ffffff !important;
+  border-radius:100% !important;
+}
 
 
 
@@ -551,6 +564,9 @@
 }
 .all-image{
   margin-top:0rem;
+}
+.arrow{
+  margin-left:2rem;
 }
 
 
@@ -846,6 +862,9 @@
   padding-left:8%;
   padding-right:8%;
 }
+.arrow{
+  margin-left:2.5rem;
+}
 
 
 
@@ -964,6 +983,10 @@
   padding-left:11%;
   padding-right:11%;
 }
+.arrow{
+  margin-left:3.8rem;
+}
+
 
 
 }

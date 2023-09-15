@@ -1,34 +1,33 @@
-import React from 'react'
-import { Offcanvas , Row, Col} from 'react-bootstrap';
+import React from "react";
+import { Offcanvas, Row,Col } from "react-bootstrap";
 import { ExternalLink } from 'react-external-link';
 // import arrow from '../../../assets/arrow.svg';
 
-function LoginModal( { show, handleClose }) {
-
-    
+function CreateaccModal({ show, handleClose }) {
   return (
     <div>
-        <Offcanvas
-              className="offcanvas"
-              placement="end"
-              show={show} onHide={handleClose}
-            >
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title>
-                <h6
+      <Offcanvas
+        className="offcanvas"
+        placement="end"
+        show={show}
+        onHide={handleClose}
+      >
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>
+            <h6
               style={{
                 color: "white",
                 fontSize: 1.8 + "rem",
                 fontFamily: "jost",
               }}
             >
-              Login
+              Create an Account
             </h6>
-                </Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
-              <div className="cardLink">
-          <ExternalLink style={{textDecoration:'none'}} href='https://main.d3lxrnyrcth1za.amplifyapp.com/login'>
+          </Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <div className="cardLink">
+          <ExternalLink style={{textDecoration:'none'}} href='https://main.d3lxrnyrcth1za.amplifyapp.com/register'>
             <Row>
               <Col  xs={10} md={10} lg={10}>
               <h6 style={{color:'#ffffff'}}>Adept for Education (A4E)</h6>
@@ -61,11 +60,10 @@ function LoginModal( { show, handleClose }) {
               </Col>
             </Row>
           </div>
-               
-              </Offcanvas.Body>
-            </Offcanvas>
+        </Offcanvas.Body>
+      </Offcanvas>
     </div>
-  )
+  );
 }
 
-export default LoginModal
+export default CreateaccModal;

@@ -1,5 +1,6 @@
 import React from "react";
 import { Image, Row, Col, Container } from "react-bootstrap";
+import { ExternalLink } from 'react-external-link';
 import { easeOut, motion } from "framer-motion";
 import educationimage from '../../../assets/educationimage.svg';
 import "../../homepage/homepage.css";
@@ -39,8 +40,11 @@ function  EducationSec() {
             <li>Reminders and Notification.</li>
             <li>Instant verification.</li>
           </ul>
-
+          
+          <ExternalLink style={{textDecoration:'none'}} href='https://main.d3lxrnyrcth1za.amplifyapp.com/'>
           <span style={{color:'#F14810', fontSize:0.8+'rem'}}>Read More</span>
+          </ExternalLink>
+          
 
     
         </Col>
