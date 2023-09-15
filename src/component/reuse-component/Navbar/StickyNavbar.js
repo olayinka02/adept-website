@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Container, Image, Button, Row, Col, Offcanvas } from "react-bootstrap";
 import { Fade as Hamburger } from "hamburger-react";
-import { Link } from "react-router-dom";
+import { easeOut, motion } from "framer-motion";
+import { NavLink, Link } from "react-router-dom";
 import { ExternalLink } from "react-external-link";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -26,7 +27,13 @@ function StickyNavbar() {
   };
 
   return (
-    <Navbar collapseOnSelect sticky="top" expand="lg"  expanded={expanded} className="sticky-navbar">
+    <Navbar
+      collapseOnSelect
+      sticky="top"
+      expand="lg"
+      expanded={expanded}
+      className="sticky-navbar"
+    >
       <Container fluid>
         <Navbar.Brand href="#home">
           <Link to="/">
@@ -45,17 +52,17 @@ function StickyNavbar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-            <Nav.Link>
-              <Link to="/">Home</Link>
-            </Nav.Link>
+          
+              <NavLink className="nav-link"  style={{ textDecoration: 'none' }} to="/">Home</NavLink>
+       
 
-            <Nav.Link>
-              <Link to="/ourservice">Our Services</Link>
-            </Nav.Link>
+          
+              <NavLink className="nav-link"  style={{ textDecoration: 'none' }} to="/ourservice">Our Services</NavLink>
+            
 
-            <Nav.Link>
-              <Link to="/contactus">Contact Us</Link>
-            </Nav.Link>
+          
+              <NavLink className="nav-link"  style={{ textDecoration: 'none' }} to="/contactus">Contact Us</NavLink>
+        
 
             {"   "}
 
@@ -102,30 +109,38 @@ function StickyNavbar() {
                   CREATE AN ACCOUNT
                 </span>
               </Button>
-              </div>
+            </div>
 
-
-
-              <Offcanvas
-                className="offcanvas"
-                placement="end"
-                show={loginShow}
-                onHide={handleLoginClose}
-              >
-                <Offcanvas.Header closeButton>
-                  <Offcanvas.Title>
-                    <h6
-                      style={{
-                        color: "white",
-                        fontSize: 1.8 + "rem",
-                        fontFamily: "jost",
-                      }}
-                    >
-                      Login
-                    </h6>
-                  </Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
+            <Offcanvas
+              className="offcanvas"
+              placement="end"
+              show={loginShow}
+              onHide={handleLoginClose}
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title>
+                  <h6
+                    style={{
+                      color: "white",
+                      fontSize: 1.8 + "rem",
+                      fontFamily: "jost",
+                    }}
+                  >
+                    Login
+                  </h6>
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <motion.div
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: -5, opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: 0.2,
+                    timingFunction: easeOut,
+                  }}
+                  viewport={{ once: true }}
+                >
                   <div className="cardLink">
                     <ExternalLink
                       style={{ textDecoration: "none" }}
@@ -143,7 +158,18 @@ function StickyNavbar() {
                       </Row>
                     </ExternalLink>
                   </div>
-                  <br />
+                </motion.div>
+                <br />
+                <motion.div
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: -5, opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: 0.4,
+                    timingFunction: easeOut,
+                  }}
+                  viewport={{ once: true }}
+                >
                   <div className="cardLink">
                     <Row>
                       <Col xs={10} md={10} lg={10}>
@@ -156,7 +182,18 @@ function StickyNavbar() {
                       </Col>
                     </Row>
                   </div>
-                  <br />
+                </motion.div>
+                <br />
+                <motion.div
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: -5, opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: 0.6,
+                    timingFunction: easeOut,
+                  }}
+                  viewport={{ once: true }}
+                >
                   <div className="cardLink">
                     <Row>
                       <Col xs={10} md={10} lg={10}>
@@ -169,28 +206,40 @@ function StickyNavbar() {
                       </Col>
                     </Row>
                   </div>
-                </Offcanvas.Body>
-              </Offcanvas>
-              <Offcanvas
-                className="offcanvas"
-                placement="end"
-                show={registerShow}
-                onHide={handleRegisterClose}
-              >
-                <Offcanvas.Header closeButton>
-                  <Offcanvas.Title>
-                    <h6
-                      style={{
-                        color: "white",
-                        fontSize: 1.8 + "rem",
-                        fontFamily: "jost",
-                      }}
-                    >
-                      Create an Account
-                    </h6>
-                  </Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
+                </motion.div>
+              </Offcanvas.Body>
+            </Offcanvas>
+
+            <Offcanvas
+              className="offcanvas"
+              placement="end"
+              show={registerShow}
+              onHide={handleRegisterClose}
+            >
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title>
+                  <h6
+                    style={{
+                      color: "white",
+                      fontSize: 1.8 + "rem",
+                      fontFamily: "jost",
+                    }}
+                  >
+                    Create an Account
+                  </h6>
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <motion.div
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: -5, opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: 0.2,
+                    timingFunction: easeOut,
+                  }}
+                  viewport={{ once: true }}
+                >
                   <div className="cardLink">
                     <ExternalLink
                       style={{ textDecoration: "none" }}
@@ -208,7 +257,18 @@ function StickyNavbar() {
                       </Row>
                     </ExternalLink>
                   </div>
-                  <br />
+                </motion.div>
+                <br />
+                <motion.div
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: -5, opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: 0.4,
+                    timingFunction: easeOut,
+                  }}
+                  viewport={{ once: true }}
+                >
                   <div className="cardLink">
                     <Row>
                       <Col xs={10} md={10} lg={10}>
@@ -221,7 +281,18 @@ function StickyNavbar() {
                       </Col>
                     </Row>
                   </div>
-                  <br />
+                </motion.div>
+                <br />
+                <motion.div
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: -5, opacity: 1 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: 0.6,
+                    timingFunction: easeOut,
+                  }}
+                  viewport={{ once: true }}
+                >
                   <div className="cardLink">
                     <Row>
                       <Col xs={10} md={10} lg={10}>
@@ -234,9 +305,9 @@ function StickyNavbar() {
                       </Col>
                     </Row>
                   </div>
-                </Offcanvas.Body>
-              </Offcanvas>
-            
+                </motion.div>
+              </Offcanvas.Body>
+            </Offcanvas>
           </Nav>
         </Navbar.Collapse>
       </Container>

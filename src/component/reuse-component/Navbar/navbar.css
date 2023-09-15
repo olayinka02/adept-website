@@ -34,11 +34,7 @@ a{
   background-repeat: no-repeat;
 }
 
-.btn-close {
-  --bs-btn-close-color:#ffffff !important;
-  --bs-btn-close-focus-shadow:none !important;
- 
-}
+
 .cardLink{
   border-radius: 8px;
 border: 1px solid #F14810;
@@ -50,6 +46,19 @@ padding-bottom:1.5rem;
 padding-left:1rem;
 padding-right:1rem;
 gap: 173px;
+}
+.nav-link{
+  font-size:0.8rem !important;
+  font-family: 'Jost', sans-serif;
+  color: #313232 !important;
+  text-decoration: none !important;
+  margin-left:0rem;
+  margin-right:0rem;
+  
+}
+.active{
+  color: #F14810 !important;
+  font-weight: 600;
 }
 
 
