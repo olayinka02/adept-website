@@ -72,7 +72,7 @@ function Footer() {
                 <li>Contact Us</li>
               </ul>
             </Col>
-            <Col xs={12} md={6} lg={6} className="contactus">
+            <Col xs={12} md={6} lg={6} className="contactusx">
               <h6 style={{ fontSize: 0.9 + "rem", color: "#F14810" }}>
                 <strong>CONTACT US</strong>
               </h6>

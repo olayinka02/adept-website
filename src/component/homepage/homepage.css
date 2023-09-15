@@ -347,8 +347,6 @@
   position: absolute;
   bottom: 50px; 
   top:90%;
- 
- 
 }
 
 
@@ -357,6 +355,7 @@
   width:3rem !important;
   height:3rem !important;
 }
+
 .carousel-control-prev-icon {
   background-image: url(../../assets/carousellefticon.svg) !important;
   width:3rem !important;
