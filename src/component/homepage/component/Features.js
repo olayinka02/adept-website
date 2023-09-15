@@ -7,6 +7,12 @@ import "../../homepage/homepage.css";
 function  Features() {
   return (
     <Container fluid className="aboutadept">
+         <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: -5, opacity: 1 }}
+        transition={{ duration: 0.3, delay: 0.4, timingFunction: easeOut }}
+        viewport={{ once: true }}
+      >
       <Row>
         <Col
           className="order-md-2 aboutadeptright"
@@ -45,6 +51,7 @@ function  Features() {
           </motion.div>
         </Col>
       </Row>
+      </motion.div>
     </Container>
   );
 }

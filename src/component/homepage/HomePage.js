@@ -9,6 +9,7 @@ import Benefits from './component/Benefits';
 import Question from './component/Question';
 import Contactus from './component/Contactus';
 import Partner from './component/Partner';
+import Footer from './component/Footer';
 
 
 function HomePage() {
@@ -24,6 +25,7 @@ function HomePage() {
       <Question />
       <Contactus />
       <Partner />
+      <Footer />
     </>
   )
 }

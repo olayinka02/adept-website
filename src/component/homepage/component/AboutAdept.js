@@ -17,6 +17,12 @@ function AboutAdept() {
           md={6}
           lg={6}
         >
+          <motion.div
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: -5, opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.4, timingFunction: easeOut }}
+            viewport={{ once: true }}
+          >
           <h2>
             <strong>What is Adept?</strong>
           </h2>
@@ -60,7 +66,9 @@ function AboutAdept() {
               CREATE AN ACCOUNT
             </span>
           </Button>
+          </motion.div>
         </Col>
+      
         <Col className="order-md-1" xs={12} sm={12} md={6} lg={6}>
           <motion.div
             initial={{ y: 20, opacity: 0 }}

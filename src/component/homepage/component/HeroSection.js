@@ -8,7 +8,7 @@ import graph from "../../../assets/graph.png";
 
 function HeroSection() {
   return (
-    <Container fluid className="herosection">
+    <Container fluid id="hero" className="herosection">
       <Row>
         <Col xs={12} md={6} lg={6} className="herosectionleft">
           <motion.div

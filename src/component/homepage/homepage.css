@@ -356,6 +356,26 @@
 .partner p{
   width:100%;
 }
+.footer{
+  background-color: #263238;
+  padding-top:3rem;
+  padding-bottom:2rem;
+  padding-left:3%;
+  padding-right:3%;
+}
+.footer ul li{
+  color:#ffffff;
+}
+
+.servicecontainer{
+  margin-top:1rem !important;
+}
+.linkcontainer{
+  margin-top:1rem !important;
+}
+.contactus{
+  margin-top:1rem !important;
+}
 
 
 
@@ -510,6 +530,22 @@
 .partner p{
   width:70%;
 }
+.footer{
+  background-color: #263238;
+  padding-top:3rem;
+  padding-bottom:2rem;
+  padding-left:7% !important;
+  padding-right:7% !important;
+}
+.servicecontainer{
+  margin-top:0rem !important;
+}
+.linkcontainer{
+  margin-top:0rem !important;
+}
+.contactus{
+  margin-top:0rem !important;
+}
 
 
 
@@ -647,6 +683,13 @@
   padding-right: 7% !important;
   padding-top: 6rem;
   margin-top: 3rem;
+}
+.footer{
+  background-color: #263238;
+  padding-top:3rem;
+  padding-bottom:2rem;
+  padding-left:7%;
+  padding-right:7%;
 }
 
 
@@ -790,6 +833,13 @@
   padding-top: 6rem;
   margin-top: 3rem;
 }
+.footer{
+  background-color: #263238;
+  padding-top:3rem;
+  padding-bottom:2rem;
+  padding-left:8%;
+  padding-right:8%;
+}
 
 
 
@@ -900,6 +950,13 @@
   padding-right: 11% !important;
   padding-top: 6rem;
   margin-top: 3rem;
+}
+.footer{
+  background-color: #263238;
+  padding-top:3rem;
+  padding-bottom:2rem;
+  padding-left:11%;
+  padding-right:11%;
 }
 
 
