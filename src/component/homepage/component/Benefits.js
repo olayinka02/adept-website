@@ -16,7 +16,7 @@ function Benefits() {
       >
         <Row>
           <Col className="aboutadeptright" xs={12} sm={12} md={6} lg={6}>
-            <div className="circleradiusdiv">Benefit</div>
+            <div className="circleradiusdivx1">Benefit</div>
             <h2 style={{ color: "#515151" }}>
               <strong>How Adept helps Businesses</strong>
             </h2>

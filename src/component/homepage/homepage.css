@@ -177,6 +177,21 @@
   font-weight: 600;
 }
 
+.circleradiusdivx1 {
+  border-radius: 29px;
+  background: #EAEAEA;
+  display: flex;
+  padding: 5px 29px 5px 29px;
+  justify-content: center;
+  align-items: center;
+  width: 6.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.86rem;
+  font-family: "Jost", sans-serif;
+  color: #f14810;
+  font-weight: 600;
+}
+
 /* accordion */
 .accordion{
   --bs-accordion-btn-focus-box-shadow: none !important;

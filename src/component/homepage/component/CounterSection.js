@@ -60,7 +60,7 @@ function CounterSection() {
                           scrollSpyOnce={true}
                           duration={3}
                         />
-                        hr
+                        Sec
                       </strong>
                     </h1>
                   </div>

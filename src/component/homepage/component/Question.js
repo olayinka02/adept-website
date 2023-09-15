@@ -47,7 +47,7 @@ function Question() {
         viewport={{ once: true }}
       >
         <center>
-        <div className="circleradiusdiv" >Support</div>
+        <div className="circleradiusdivx1" >Support</div>
         </center>
   
       <h2 style={{fontFamily:'jost',fontSize:2.2+'rem',color:'#515151',textAlign:'center'}} ><strong>Frequently Asked Questions</strong></h2>

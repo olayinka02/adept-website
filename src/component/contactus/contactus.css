@@ -1,0 +1,115 @@
+.contactus{
+    height:100vh;
+}
+.formside{
+    background: url(../../assets/formsidebg.svg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    padding-top: 2rem;
+    padding-left:3%;
+    padding-right:3%;
+    display: none !important;
+    
+}
+.navlogodisplay{
+    display:inline !important;
+    margin-bottom:2rem;
+}
+.formmain{
+    padding-top: 2rem;
+    padding-left:3%;
+    padding-right:3%;
+    
+}
+.formcontrol {
+    border-radius: 4.42px;
+    border: 0.9px solid var(--input-field-stoke, #DDD) !important;
+    background: #EDEDED !important;
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.02);
+}
+
+
+.formcontrol::placeholder {
+    font-size: 0.85rem; /* Adjust the font size as needed */
+  }
+
+  .formlabel{
+    font-size:0.85rem;
+  }
+
+  /* Reduce the focus border and add a box-shadow effect */
+  .formcontrol:focus {
+    outline: none;
+    box-shadow: 0 0 0.2px 0.2px rgba(80, 80, 80, 0.2) !important;
+  }
+  .logoss{
+    display: none !important;
+}
+
+
+
+@media (min-width: 576px) { 
+
+ }
+
+
+@media (min-width: 768px) { 
+    .navlogodisplay{
+        display:none !important;
+    }
+    .formmain{
+        padding-top: 2rem;
+        padding-left:7% !important;
+        padding-right:7% !important;
+        
+    }
+    .formside{
+        padding-left:7%;
+        padding-right:7%;
+        display: inline !important;
+        
+    }
+    .logoss{
+        display: inline !important;
+    }
+    
+
+ }
+
+
+@media (min-width: 992px) { 
+
+ }
+
+
+@media (min-width: 1200px) { 
+    .formmain{
+        padding-top: 2rem;
+        padding-left:8%;
+        padding-right:8%;
+        
+    }
+    .formside{
+        padding-left:8%;
+        padding-right:8%;
+        
+    }
+
+ }
+
+
+@media (min-width: 1400px) { 
+    .formmain{
+        padding-top: 2rem;
+        padding-left:14%;
+        padding-right:14%;
+        
+    }
+    .formside{
+        padding-left:14%;
+        padding-right:14%;
+        
+    }
+
+ }
